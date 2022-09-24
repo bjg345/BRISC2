@@ -1,0 +1,14 @@
+useDynLib(BRISC2, .registration=TRUE)
+
+export(BRISC2_estimation)
+export(BRISC2_bootstrap)
+export(BRISC2_prediction)
+export(BRISC2_variogram.ci)
+export(BRISC2_correlation)
+export(BRISC2_simulation)
+export(BRISC2_decorrelation)
+export(BRISC2_order)
+export(BRISC2_neighbor)
+
+import(RANN, parallel, stats, rdist, matrixStats, pbapply)
+importFrom("graphics", "legend", "lines", "plot")
